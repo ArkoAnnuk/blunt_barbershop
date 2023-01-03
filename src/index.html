@@ -69,7 +69,7 @@
                     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
                     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
                         async></script>
-                    <a href="" class="border border-2 border-dark btn btn-warning btn-lg mt-auto p-3 text-primary"
+                    <a href="" class="border border-2 border-dark btn btn-warning btn-lg mt-auto mb-5 p-3 text-primary"
                         style="width: 250px; margin-bottom: 30px; font-weight: 1000;"
                         onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arkoannuk/'});return false;">Broneeri
                         aeg</a>
@@ -80,7 +80,8 @@
         <!-- Heroe End -->
         <!-- Services Start -->
 
-        <div class="container-fluid d-flex align-items-center bg-image" style="min-height:110vh; background-image: url('/assets/blob-scene-haikei.svg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="container-fluid d-flex align-items-center bg-image"
+            style="min-height:110vh; background-image: url('/assets/blob-scene-haikei.svg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <div class="container">
                 <div>
                     <img class="d-block mx-auto m-5" src="../assets/teenused.png" alt="" height="70">
@@ -164,11 +165,13 @@
         <!-- Slideshow End -->
         <!-- Jumbotron Start -->
 
-        <div class="container-fluid d-flex px-4 py-5 text-center align-items-center bg-image" style="height: 100vh; background-image: url('/assets/blob-scene-haikei2.svg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="container-fluid d-flex px-4 py-5 text-center align-items-center bg-image"
+            style="height: 100vh; background-image: url('/assets/blob-scene-haikei2.svg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <div>
                 <img class="d-block mx-auto mb-5 jumboLogoGsap" src="../assets/otsekohene.png" alt="" height="70">
                 <div class="col-lg-6 mx-auto jumboTextGsap">
-                    <p class="lead mb-4 text-dark" style="font-size: 22px;">Quickly design and customize responsive mobile-first sites with
+                    <p class="lead mb-4 text-dark" style="font-size: 22px;">Quickly design and customize responsive
+                        mobile-first sites with
                         Bootstrap,
                         the
                         worlds most popular front-end open source toolkit, featuring Sass variables and mixins,
@@ -187,32 +190,84 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active d-flex align-items-end justify-content-center"
                         style="background-image: url(/assets/shop1.jpg); height: 70vh; background-size: cover; background-position: center;">
-                        <a href="" class="border border-2 border-dark btn btn-warning btn-lg m-5 p-3 text-primary"
-                            style="width: 250px; font-weight: 1000;"
-                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arkoannuk/?hide_landing_page_details=1&hide_gdpr_banner=1'});return false;">Tutvu
-                            toodetega</a>
+                        <button type="button"
+                            class="border border-2 border-dark btn btn-warning btn-lg m-5 p-3 text-primary"
+                            style="width: 250px; font-weight: 1000;" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Tutvu toodetega
+                        </button>
                     </div>
                     <div class="carousel-item d-flex align-items-end justify-content-center"
                         style="background-image: url(/assets/shop2.jpg); height: 70vh; background-size: cover; background-position: center;">
-                        <a href="" class="border border-2 border-dark btn btn-warning btn-lg m-5 p-3 text-primary"
-                            style="width: 250px; font-weight: 1000;"
-                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arkoannuk/?hide_landing_page_details=1&hide_gdpr_banner=1'});return false;">Tutvu
-                            toodetega</a>
+                        <button type="button"
+                            class="border border-2 border-dark btn btn-warning btn-lg m-5 p-3 text-primary"
+                            style="width: 250px; font-weight: 1000;" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Tutvu toodetega
+                        </button>
                     </div>
                     <div class="carousel-item d-flex align-items-end justify-content-center"
                         style="background-image: url(/assets/shop3.jpg); height: 70vh; background-size: cover; background-position: center;">
-                        <a href="" class="border border-2 border-dark btn btn-warning btn-lg m-5 p-3 text-primary"
-                            style="width: 250px; font-weight: 1000;"
-                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arkoannuk/?hide_landing_page_details=1&hide_gdpr_banner=1'});return false;">Tutvu
-                            toodetega</a>
+                        <button type="button"
+                            class="border border-2 border-dark btn btn-warning btn-lg m-5 p-3 text-primary"
+                            style="width: 250px; font-weight: 1000;" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Tutvu toodetega
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Products End -->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Meie Tooted</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row mb-2 d-flex align-items-center">
+                            <div class="col-3 d-flex justify-content-center">
+                                <img src="/assets/template.png" class="rounded-circle">
+                            </div>
+                            <div class="col-3 ps-3">
+                                Habemeoli
+                            </div>
+                            <div class="col-4 ms-auto text-end">
+                                20€
+                            </div>
+                        </div>
+                        <div class="row mb-2 d-flex align-items-center">
+                            <div class="col-3 d-flex justify-content-center">
+                                <img src="/assets/template.png" class="rounded-circle">
+                            </div>
+                            <div class="col-3 ps-3">
+                                Habemeoli
+                            </div>
+                            <div class="col-4 ms-auto text-end">
+                                20€
+                            </div>
+                        </div>
+                        <div class="row d-flex align-items-center">
+                            <div class="col-3 d-flex justify-content-center">
+                                <img src="/assets/template.png" class="rounded-circle">
+                            </div>
+                            <div class="col-3 ps-3">
+                                Habemeoli
+                            </div>
+                            <div class="col-4 ms-auto text-end">
+                                20€
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    </div>
+            <!-- Products End -->
+
+        </div>
 </body>
 
 <!-- Footer Start -->

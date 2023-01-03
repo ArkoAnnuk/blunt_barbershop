@@ -18,6 +18,10 @@ footer a {
 // Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
 
+.btn-warning:hover {
+  background-color: #55638f;
+}
+
 // Navigation Bar
 .navbar-brand {
   padding: 0;
