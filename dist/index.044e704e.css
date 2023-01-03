@@ -7,6 +7,10 @@ footer a {
   font-family: Roboto, sans-serif;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11963,6 +11967,10 @@ textarea.form-control-lg {
 
 .btn-warning:hover {
   background-color: #55638f;
+}
+
+.btn-secondary:hover {
+  background-color: #efe1c6;
 }
 
 .navbar-brand {

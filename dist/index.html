@@ -42,7 +42,8 @@
                         <a class="nav-link mx-2 text-primary fw-bold" href="#">Pildid</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2 text-primary fw-bold" href="#">Tooted</a>
+                        <a class="nav-link mx-2 text-primary fw-bold" href="#" data-bs-toggle="modal" data-bs-target="#productsModal">Tooted</a>
+
                     </li>
                 </ul>
             </div>
@@ -66,7 +67,7 @@
                 <div class="card-img-overlay d-flex flex-column align-items-center border-0 shadow-none g-0">
                     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
                     <script src="https://assets.calendly.com/assets/external/widget.js" async=""></script>
-                    <a href="" class="border border-2 border-dark btn btn-warning btn-lg mt-auto mb-5 p-3 text-primary" style="width: 250px; margin-bottom: 30px; font-weight: 1000" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arkoannuk/'});return false;">Broneeri
+                    <a href="" class="border border-2 border-dark btn btn-warning btn-lg mt-auto p-3 text-primary" style="width: 250px; margin-bottom: 80px; font-weight: 1000" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arkoannuk/'});return false;">Broneeri
                         aeg</a>
                 </div>
             </div>
@@ -128,7 +129,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-center">
+                <div class="d-flex justify-content-center">
                     <a href="" class="border border-2 border-dark btn btn-warning btn-lg m-5 p-3 text-primary" style="width: 250px; font-weight: 1000" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arkoannuk/?hide_landing_page_details=1&hide_gdpr_banner=1'});return false;">Vaata
                         pilte</a>
                 </div>
@@ -174,17 +175,17 @@
             <div class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="false" data-bs-pause="false" data-bs-interval="1800" style="height: 70vh">
                 <div class="carousel-inner">
                     <div class="carousel-item active d-flex align-items-end justify-content-center" style="height: 70vh; background-image: url(&quot;shop1.9cfd52b6.jpg&quot;); background-position: center; background-size: cover">
-                        <button type="button" class="border border-2 border-dark btn btn-warning btn-lg m-5 p-3 text-primary" style="width: 250px; font-weight: 1000" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <button type="button" class="border border-2 border-dark btn btn-warning btn-lg m-5 p-3 text-primary" style="width: 250px; font-weight: 1000" data-bs-toggle="modal" data-bs-target="#productsModal">
                             Tutvu toodetega
                         </button>
                     </div>
                     <div class="carousel-item d-flex align-items-end justify-content-center" style="height: 70vh; background-image: url(&quot;shop2.8780e0b4.jpg&quot;); background-position: center; background-size: cover">
-                        <button type="button" class="border border-2 border-dark btn btn-warning btn-lg m-5 p-3 text-primary" style="width: 250px; font-weight: 1000" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <button type="button" class="border border-2 border-dark btn btn-warning btn-lg m-5 p-3 text-primary" style="width: 250px; font-weight: 1000" data-bs-toggle="modal" data-bs-target="#productsModal">
                             Tutvu toodetega
                         </button>
                     </div>
                     <div class="carousel-item d-flex align-items-end justify-content-center" style="height: 70vh; background-image: url(&quot;shop3.bbc4bb87.jpg&quot;); background-position: center; background-size: cover">
-                        <button type="button" class="border border-2 border-dark btn btn-warning btn-lg m-5 p-3 text-primary" style="width: 250px; font-weight: 1000" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <button type="button" class="border border-2 border-dark btn btn-warning btn-lg m-5 p-3 text-primary" style="width: 250px; font-weight: 1000" data-bs-toggle="modal" text="" data-bs-target="#productsModal">
                             Tutvu toodetega
                         </button>
                     </div>
@@ -192,56 +193,76 @@
             </div>
         </div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+        <!-- Products Modal Start -->
+        <div class="modal fade" id="productsModal" tabindex="-1" aria-labelledby="productsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Meie Tooted</h1>
+                        <h1 class="modal-title fs-5" id="productsModalLabel">Meie Tooted</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <div class="row mb-2 d-flex align-items-center">
+                        <div class="row mb-3 d-flex align-items-center">
                             <div class="col-3 d-flex justify-content-center">
                                 <img src="/template.4ea014c8.png" class="rounded-circle">
                             </div>
-                            <div class="col-3 ps-3">
-                                Habemeoli
+                            <div class="col-7 ps-3">
+                                <h6 class="my-auto">Habemeõli</h6>
+                                <p class="my-auto">Kõige parem asi üldse tegelt ka proovi lihtsalt</p>
                             </div>
-                            <div class="col-4 ms-auto text-end">
+                            <div class="col-2 ms-auto text-end">
                                 20€
                             </div>
                         </div>
-                        <div class="row mb-2 d-flex align-items-center">
+                        <div class="row mb-3 d-flex align-items-center">
                             <div class="col-3 d-flex justify-content-center">
                                 <img src="/template.4ea014c8.png" class="rounded-circle">
                             </div>
-                            <div class="col-3 ps-3">
-                                Habemeoli
+                            <div class="col-7 ps-3">
+                                <h6 class="my-auto">Habemeõli</h6>
+                                <p class="my-auto">Kõige parem asi üldse tegelt ka proovi lihtsalt</p>
                             </div>
-                            <div class="col-4 ms-auto text-end">
+                            <div class="col-2 ms-auto text-end">
                                 20€
                             </div>
                         </div>
-                        <div class="row d-flex align-items-center">
+                        <div class="row mb-3 d-flex align-items-center">
                             <div class="col-3 d-flex justify-content-center">
                                 <img src="/template.4ea014c8.png" class="rounded-circle">
                             </div>
-                            <div class="col-3 ps-3">
-                                Habemeoli
+                            <div class="col-7 ps-3">
+                                <h6 class="my-auto">Habemeõli</h6>
+                                <p class="my-auto">Kõige parem asi üldse tegelt ka proovi lihtsalt</p>
                             </div>
-                            <div class="col-4 ms-auto text-end">
+                            <div class="col-2 ms-auto text-end">
+                                20€
+                            </div>
+                        </div>
+                        <div class="row mb-3 d-flex align-items-center">
+                            <div class="col-3 d-flex justify-content-center">
+                                <img src="/template.4ea014c8.png" class="rounded-circle">
+                            </div>
+                            <div class="col-7 ps-3">
+                                <h6 class="my-auto">Habemeõli</h6>
+                                <p class="my-auto">Kõige parem asi üldse tegelt ka proovi lihtsalt</p>
+                            </div>
+                            <div class="col-2 ms-auto text-end">
                                 20€
                             </div>
                         </div>
                     </div>
+                    <div class="modal-footer d-flex justify-content-start">
+                        <p>Lähemalt saate toodetega tutvuda <span class="fw-bold">kohapeal</span>.</p>
+                    </div>
                 </div>
             </div>
-
-            <!-- Products End -->
-
         </div>
-</div></body>
+
+        <!-- Products Modal Start -->
+        <!-- Products End -->
+
+    </div>
+</body>
 
 <!-- Footer Start -->
 <footer>

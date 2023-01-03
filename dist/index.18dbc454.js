@@ -537,10 +537,19 @@ var _bootstrap = require("bootstrap");
 // Import gsap animations
 var _gsap = require("gsap");
 var _scrollTrigger = require("gsap/ScrollTrigger");
-(0, _gsap.gsap).registerPlugin((0, _scrollTrigger.ScrollTrigger)); // Jumbotron Animations
- // gsap.fromTo(".jumboLogoGsap", { y: 100, opacity: 0, }, { scrollTrigger: ".jumboLogoGsap", y: 0, opacity: 1, delay: 0, duration: 1, ease: "Power3.easeInOut" });
- // gsap.fromTo(".jumboTextGsap", { y: 100, opacity: 0, }, { scrollTrigger: ".jumboTextGsap", y: 0, opacity: 1, delay: 0.1, duration: ease: "Power3.easeInOut" });
- // Services Animations
+(0, _gsap.gsap).registerPlugin((0, _scrollTrigger.ScrollTrigger));
+// Jumbotron Animations
+// gsap.fromTo(".jumboLogoGsap", { y: 100, opacity: 0, }, { scrollTrigger: ".jumboLogoGsap", y: 0, opacity: 1, delay: 0, duration: 1, ease: "Power3.easeInOut" });
+// gsap.fromTo(".jumboTextGsap", { y: 100, opacity: 0, }, { scrollTrigger: ".jumboTextGsap", y: 0, opacity: 1, delay: 0.1, duration: ease: "Power3.easeInOut" });
+// Services Animations
+// Hide Modal Scrollbar
+var modal = document.getElementById("productsModal");
+modal.addEventListener("show.bs.modal", function() {
+    document.body.classList.add("modal-open");
+});
+modal.addEventListener("hide.bs.modal", function() {
+    document.body.classList.remove("modal-open");
+});
 
 },{"bootstrap":"h36JB","gsap":"fPSuC","gsap/ScrollTrigger":"7wnFk"}],"h36JB":[function(require,module,exports) {
 /*!

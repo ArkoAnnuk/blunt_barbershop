@@ -11,3 +11,16 @@ gsap.registerPlugin(ScrollTrigger);
 // gsap.fromTo(".jumboTextGsap", { y: 100, opacity: 0, }, { scrollTrigger: ".jumboTextGsap", y: 0, opacity: 1, delay: 0.1, duration: ease: "Power3.easeInOut" });
 
 // Services Animations
+
+// Hide Modal Scrollbar
+var modal = document.getElementById("productsModal");
+
+modal.addEventListener("show.bs.modal", function() {
+  document.body.classList.add("modal-open");
+});
+
+modal.addEventListener("hide.bs.modal", function() {
+  document.body.classList.remove("modal-open");
+});
+
+
