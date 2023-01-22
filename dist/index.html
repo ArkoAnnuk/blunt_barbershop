@@ -16,36 +16,40 @@
 <!-- Navigation Bar Start -->
 
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark p-3 bg-dark fixed-top py-2 shadow" id="headerNav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
         <div class="container-fluid">
             <a class="navbar-brand d-block d-lg-none logo" href="#">
                 <img src="/BluntBarbershop_Logo2.6386df7f.svg" alt="" height="50">
             </a>
+            <span class="navbar-text d-block d-lg-none ms-auto px-4">
+                <a href="" class="text-primary" id="lang" style="text-decoration: none">Et / En</a>
+            </span>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class=" collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav mx-auto" style="position: relative; left: -13px">
-                    <li class="nav-item">
-                        <a class="nav-link mx-2 text-primary fw-bold" aria-current="page" href="#">Avaleht</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2 text-primary fw-bold" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arkoannuk'});return false;">Broneeri</a>
-                    </li>
-                    <li class="nav-item d-none d-lg-block">
-                        <a class="nav-link mx-3" href="#">
-                            <img src="/BluntBarbershop_Logo2.6386df7f.svg" alt="" height="90">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2 text-primary fw-bold" href="#">Pildid</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2 text-primary fw-bold" href="#" data-bs-toggle="modal" data-bs-target="#productsModal">Tooted</a>
-
-                    </li>
-                </ul>
+            <div class="collapse navbar-collapse navbar-dark bg-dark" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link mx-2 text-primary fw-bold" aria-current="page" href="#">Avaleht</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2 text-primary fw-bold" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arkoannuk'});return false;">Broneeri</a>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link mx-3" href="#">
+                        <img src="/BluntBarbershop_Logo2.6386df7f.svg" alt="" height="90">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2 text-primary fw-bold" href="https://www.instagram.com/" target="_blank">Pildid</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2 text-primary fw-bold" href="#" data-bs-toggle="modal" data-bs-target="#productsModal">Tooted</a>
+                </li>
+            </ul>
+            <span class="navbar-text ms-auto d-none d-lg-block me-3">
+                <a href="" class="text-primary" id="lang" style="text-decoration: none">Et / En</a>
+            </span>
             </div>
         </div>
     </nav>
@@ -84,7 +88,7 @@
                 <div class="row g-3">
                     <div class="col-12 col-md-6 col-xl-3">
                         <div class="card border border-3 border-warning rounded-0 shadow">
-                            <img src="/juukseloikus.83acba56.png" class="card-img-top rounded-0" alt="A Street in Europe">
+                            <img src="/juukseloikus.83acba56.png" class="card-img-top rounded-0" alt="Juukse lõikuse teenus">
                             <div class="card-body">
                                 <h5 class="card-title fw-bold">Juukselõikus</h5>
                                 <p class="card-text" style="height: 120px">Lõikust teostatakse kääride ja masinate
@@ -96,7 +100,7 @@
                     </div>
                     <div class="col-12 col-md-6 col-xl-3">
                         <div class="card border border-3 border-warning rounded-0 shadow">
-                            <img src="/habemekujundamine.864328f6.png" class="card-img-top rounded-0" alt="London">
+                            <img src="/habemekujundamine.864328f6.png" class="card-img-top rounded-0" alt="Habeme kujundamine teenus">
                             <div class="card-body">
                                 <h5 class="card-title fw-bold">Habeme kujundamine</h5>
                                 <p class="card-text" style="height: 120px">Habeme kujundamine masina/kääride abil.
@@ -109,7 +113,7 @@
                     </div>
                     <div class="col-12 col-md-6 col-xl-3">
                         <div class="card border border-3 border-warning rounded-0 shadow">
-                            <img src="/pearaseerimine.078b88d4.png" class="card-img-top rounded-0" alt="New York">
+                            <img src="/pearaseerimine.078b88d4.png" class="card-img-top rounded-0" alt="Pea raseerimine teenus">
                             <div class="card-body">
                                 <h5 class="card-title fw-bold">Pea raseerimine</h5>
                                 <p class="card-text" style="height: 120px">Pea raseerimine habemevahu ja noaga.</p>
@@ -119,7 +123,7 @@
                     </div>
                     <div class="col-12 col-md-6 col-xl-3">
                         <div class="card border border-3 border-warning rounded-0 shadow">
-                            <img src="/kompleksteenus.337d5eb9.png" class="card-img-top rounded-0" alt="A Street in Europe">
+                            <img src="/kompleksteenus.337d5eb9.png" class="card-img-top rounded-0" alt="Kompleksteenus teenus">
                             <div class="card-body">
                                 <h5 class="card-title fw-bold">Kompleksteenused</h5>
                                 <p class="card-text" style="height: 120px">Juukselõikus kääride ja masinate abil/ainult
@@ -130,8 +134,7 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <a href="" class="border border-2 border-dark btn btn-warning btn-lg m-5 p-3 text-primary rounded-0 shadow" style="width: 250px; font-weight: 1000" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arkoannuk/?hide_landing_page_details=1&hide_gdpr_banner=1'});return false;">Vaata
-                        pilte</a>
+                    <a href="https://www.instagram.com/" target="_blank" class="border border-2 border-dark btn btn-warning btn-lg m-5 p-3 text-primary rounded-0 shadow" style="width: 250px; font-weight: 1000">Vaata pilte</a>
                 </div>
             </div>
         </div>
@@ -155,15 +158,9 @@
 
         <div class="container-fluid d-flex px-4 py-5 text-center align-items-center justify-content-center bg-image" style="height: 100vh; background-image: url(&quot;blob-scene-haikei2.9cc8c4b7.svg&quot;); background-position: center; background-repeat: no-repeat; background-size: cover">
             <div>
-                <img class="d-block mx-auto mb-5 jumboLogoGsap" src="/otsekohene.22494f2f.png" alt="" height="70">
+                <img class="d-block mx-auto mb-5 jumboLogoGsap" src="/miksblunt.9988c6d7.png" alt="" height="70">
                 <div class="col-lg-6 mx-auto jumboTextGsap">
-                    <p class="lead mb-4 text-dark" style="font-size: 22px">Quickly design and customize responsive
-                        mobile-first sites with
-                        Bootstrap,
-                        the
-                        worlds most popular front-end open source toolkit, featuring Sass variables and mixins,
-                        responsive
-                        grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <p class="lead mb-4 text-dark" style="font-size: 22px">Meie kogenud barberid pakuvad teile täiuslikku juukselõikust, habeme kujundamist ja pea raseerimist. Kasutame vaid parimaid vahendeid ja tehnikaid. Meie eesmärk on pakkuda ideaalset teenindust, et jääksite rahule ja kindlaks, et teie ilme on võimalikult hea. Broneerige aeg juba täna ja nautige professionaalset teenindust Blunt Barbershopis!</p>
                 </div>
             </div>
         </div>
@@ -196,7 +193,7 @@
         <!-- Products Modal Start -->
         <div class="modal fade" id="productsModal" tabindex="-1" aria-labelledby="productsModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
+                <div class="modal-content rounded-0 shadow border border-3 border-warning">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="productsModalLabel">Meie Tooted</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -238,7 +235,7 @@
                                 20€
                             </div>
                         </div>
-                        <div class="row mb-3 d-flex align-items-center">
+                        <div class="row d-flex align-items-center">
                             <div class="col-3 d-flex justify-content-center">
                                 <img src="/template.4ea014c8.png" class="rounded-circle">
                             </div>
@@ -274,11 +271,11 @@
             <div>
                 <a class="fw-bold" href="tel:123-456-7890">+123-456-7890</a>
                 <br>
-                <a class="fw-bold" href="mailto: abc@example.com">abs@example.com</a>
+                <a class="fw-bold" href="mailto: abc@example.com">info@bluntbarbershop.ee</a>
                 <br>
-                <a class="fw-bold" href="https://www.w3schools.com">Kivi 12, Tartu</a>
+                <a class="fw-bold" href="https://www.w3schools.com">Aleksandri 56, Tartu</a>
                 <br>
-                <a class="fw-bold" href="https://www.w3schools.com"><img src="/instagram.6fb4e9cf.svg" width="20" class="mt-2"></a>
+                <a class="fw-bold" href="https://www.instagram.com/" target="_blank"> <img src="/instagram.6fb4e9cf.svg" width="20" class="mt-2"></a>
             </div>
         </div>
     </div>
