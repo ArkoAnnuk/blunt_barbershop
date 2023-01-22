@@ -12005,6 +12005,17 @@ textarea.form-control-lg {
     left: 50%;
     transform: translateX(-50%);
   }
+
+  .navbar-nav.eng {
+    margin-left: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+body {
+  overflow-y: scroll;
 }
 
 /*# sourceMappingURL=index.044e704e.css.map */
