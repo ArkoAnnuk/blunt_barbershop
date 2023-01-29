@@ -3,7 +3,7 @@ p {
   font-size: 17.5px;
 }
 
-footer a {
+footer a, #author {
   font-family: Roboto, sans-serif;
 }
 
@@ -11987,6 +11987,35 @@ textarea.form-control-lg {
 .container-fluid video, .container-sm video, .container-md video, .container-lg video, .container-xl video, .container-xxl video {
   object-fit: cover;
   height: 100vh;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    margin-left: 0;
+    position: relative;
+    left: auto;
+    transform: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-nav {
+    margin-left: -17px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navbar-nav.eng {
+    margin-left: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+body {
+  overflow-y: scroll;
 }
 
 /*# sourceMappingURL=index.044e704e.css.map */

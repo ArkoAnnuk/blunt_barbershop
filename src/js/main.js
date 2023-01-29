@@ -5,12 +5,10 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-
 // Jumbotron Animations
 // gsap.fromTo(".jumboLogoGsap", { y: 100, opacity: 0, }, { scrollTrigger: ".jumboLogoGsap", y: 0, opacity: 1, delay: 0, duration: 1, ease: "Power3.easeInOut" });
 // gsap.fromTo(".jumboTextGsap", { y: 100, opacity: 0, }, { scrollTrigger: ".jumboTextGsap", y: 0, opacity: 1, delay: 0.1, duration: ease: "Power3.easeInOut" });
 
-// Services Animations
 
 // Hide Modal Scrollbar
 var modal = document.getElementById("productsModal");

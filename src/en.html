@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blunt Barbershop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700">
+    <link rel="stylesheet" href="scss/styles.scss">
+    <link rel="icon" href="../assets/scissors_01.svg">
+    <script type="module" src="js/main.js"></script>
+</head>
+
+<body class="g-0 bg-dark" style="height: 100vh;">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand d-block d-lg-none logo" href="#">
+                    <img src="../assets/BluntBarbershop_Logo2.svg" alt="" height="50">
+                </a>
+                <span class="navbar-text d-block d-lg-none ms-auto px-4">
+                    <a href="index.html" class="text-primary" id="lang" style="text-decoration: none;">En / Et</a>
+                </span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navbar-dark bg-dark" id="navbarNavDropdown">
+                    <ul class="navbar-nav eng">
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 text-primary fw-bold" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 text-primary fw-bold" href=""
+                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arkoannuk'});return false;">Booking</a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="nav-link mx-3" href="#">
+                                <img src="../assets/BluntBarbershop_Logo2.svg" alt="" height="90">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 text-primary fw-bold" href="https://www.instagram.com/" target="_blank">Lookbook</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 text-primary fw-bold" href="#" data-bs-toggle="modal" data-bs-target="#productsModal">Products</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text ms-auto d-none d-lg-block me-3">
+                        <a href="index.html" class="text-primary" id="lang" style="text-decoration: none;">En / Et</a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid g-0">
+
+            <heroe class="container-fluid g-0" style="height: 100vh;">
+
+                <div class="card text-bg-dark text-center border-0 shadow-none g-0">
+                    <video poster="../assets/videoPreview.jpg" preload muted autoplay loop>
+                        <source src="../assets/output.mp4" type="video/mp4">
+                        <source src="../assets/output.mov" type="video/mov">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="card-img-overlay d-flex flex-column align-items-center border-0 shadow-none g-0">
+                        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+                        <a href=""
+                            class="border border-2 border-dark btn btn-warning btn-lg mt-auto p-3 text-primary rounded-0 shadow"
+                            style="width: 250px; margin-bottom: 130px; font-weight: 1000;"
+                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arkoannuk/'});return false;">Book Reservation</a>
+                    </div>
+                </div>
+            </heroe>
+
+            <services class="container-fluid d-flex align-items-center bg-image"
+                style="min-height:110vh; background-image: url('../assets/blob-scene-haikei.svg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <div class="container">
+                    <div>
+                        <img class="d-block mx-auto m-5" src="../assets/services.png" alt="" height="70">
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6 col-xl-3">
+                            <div class="card border border-3 border-warning rounded-0 shadow">
+                                <img src="../assets/juukseloikus.png" class="card-img-top rounded-0" alt="Juukse lõikuse teenus">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Haircut</h5>
+                                    <p class="card-text" style="height: 120px;">Haircut is performed with machines and clippers/only scissors. Includes a hair wash and styling, using professional cosmetic products.</p>
+                                    <button type="button" class="btn btn-secondary">25€-30€</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3">
+                            <div class="card border border-3 border-warning rounded-0 shadow">
+                                <img src="../assets/habemekujundamine.png" class="card-img-top rounded-0" alt="Habeme kujundamine teenus">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Beard Design</h5>
+                                    <p class="card-text" style="height: 120px;">Beard shape modelling with machines/scissors. Cheek and neck contours modified with a trimmer and clipper, or with a shaving knife.</p>
+                                    <button type="button" class="btn btn-secondary">15€-20€</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3">
+                            <div class="card border border-3 border-warning rounded-0 shadow">
+                                <img src="../assets/pearaseerimine.png" class="card-img-top rounded-0" alt="Pea raseerimine teenus">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Head Shave</h5>
+                                    <p class="card-text" style="height: 120px">Head shave with shaving cream and a razor.</p>
+                                    <button type="button" class="btn btn-secondary">20$-25$</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3">
+                            <div class="card border border-3 border-warning rounded-0 shadow">
+                                <img src="../assets/kompleksteenus.png" class="card-img-top rounded-0" alt="Kompleksteenus teenus">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Complex Service</h5>
+                                    <p class="card-text" style="height: 120px">Haircut with scissors and machines/only scissors + beard design with machines/scissors.</p>
+                                    <button type="button" class="btn btn-secondary">35$-40$</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="https://www.instagram.com/" target="_blank"
+                            class="border border-2 border-dark btn btn-warning btn-lg m-5 p-3 text-primary rounded-0 shadow"
+                            style="width: 250px; font-weight: 1000;">Lookbook</a>
+                    </div>
+                </div>
+            </services>
+
+            <slideshow class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="false" data-bs-pause="false" data-bs-interval="1800" style="height:110vh;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active"
+                        style="background-image: url(../assets/shop1.jpg); height: 110vh; background-size: cover; background-position: center;">
+                    </div>
+                    <div class="carousel-item"
+                        style="background-image: url(../assets/shop2.jpg); height: 110vh; background-size: cover; background-position: center;">
+                    </div>
+                    <div class="carousel-item"
+                        style="background-image: url(../assets/shop3.jpg); height: 110vh; background-size: cover; background-position: center;">
+                    </div>
+                </div>
+            </slideshow>
+
+            <jumbotron
+                class="container-fluid d-flex px-4 py-5 text-center align-items-center justify-content-center bg-image"
+                style="height: 100vh; background-image: url('../assets/blob-scene-haikei2.svg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <div>
+                    <img class="d-block mx-auto mb-5 jumboLogoGsap" src="../assets/whyblunt.png" alt="" height="70">
+                    <div class="col-lg-6 mx-auto jumboTextGsap">
+                        <p class="lead mb-4 text-dark" style="font-size: 22px;">We offer top-notch haircuts, beard designs, and head shaves. Our barbers use the best products and techniques to make sure you're happy with your look. Book an appointment and let us take care of your grooming needs in a professional and relaxed atmosphere.</p>
+                    </div>
+                </div>
+            </jumbotron>
+
+            <products class="container-fluid g-0">
+                <div class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="false"
+                    data-bs-pause="false" data-bs-interval="1800" style="height:70vh;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active d-flex align-items-end justify-content-center"
+                            style="background-image: url(../assets/shop1.jpg); height: 70vh; background-size: cover; background-position: center;">
+                            <button type="button"
+                                class="border border-2 border-dark btn btn-warning btn-lg m-5 p-3 text-primary shadow rounded-0"
+                                style="width: 250px; font-weight: 1000;" data-bs-toggle="modal"
+                                data-bs-target="#productsModal">
+                                View Products
+                            </button>
+                        </div>
+                        <div class="carousel-item d-flex align-items-end justify-content-center"
+                            style="background-image: url(../assets/shop2.jpg); height: 70vh; background-size: cover; background-position: center;">
+                            <button type="button"
+                                class="border border-2 border-dark btn btn-warning btn-lg m-5 p-3 text-primary shadow rounded-0"
+                                style="width: 250px; font-weight: 1000;" data-bs-toggle="modal"
+                                data-bs-target="#productsModal">
+                                View Products
+                            </button>
+                        </div>
+                        <div class="carousel-item d-flex align-items-end justify-content-center"
+                            style="background-image: url(../assets/shop3.jpg); height: 70vh; background-size: cover; background-position: center;">
+                            <button type="button"
+                                class="border border-2 border-dark btn btn-warning btn-lg m-5 p-3 text-primary shadow rounded-0"
+                                style="width: 250px; font-weight: 1000;" data-bs-toggle="modal" Text
+                                data-bs-target="#productsModal">
+                                View Products
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </products>
+
+            <products-modal class="modal fade" id="productsModal" tabindex="-1" aria-labelledby="productsModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content rounded-0 shadow border border-3 border-warning">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="productsModalLabel">Meie Tooted</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row mb-3 d-flex align-items-center">
+                                <div class="col-3 d-flex justify-content-center">
+                                    <img src="../assets/template.png" class="rounded-circle">
+                                </div>
+                                <div class="col-7 ps-3">
+                                    <h6 class="my-auto" style="font-size: 1.15rem;">Beard Oil</h6>
+                                    <p class="my-auto">The best thing ever you must try it for real</p>
+                                </div>
+                                <div class="col-2 ms-auto text-end">
+                                    20€
+                                </div>
+                            </div>
+                            <div class="row mb-3 d-flex align-items-center">
+                                <div class="col-3 d-flex justify-content-center">
+                                    <img src="../assets/template.png" class="rounded-circle">
+                                </div>
+                                <div class="col-7 ps-3">
+                                    <h6 class="my-auto" style="font-size: 1.15rem;">Beard Oil</h6>
+                                    <p class="my-auto">The best thing ever you must try it for real</p>
+                                </div>
+                                <div class="col-2 ms-auto text-end">
+                                    20€
+                                </div>
+                            </div>
+                            <div class="row mb-3 d-flex align-items-center">
+                                <div class="col-3 d-flex justify-content-center">
+                                    <img src="../assets/template.png" class="rounded-circle">
+                                </div>
+                                <div class="col-7 ps-3">
+                                    <h6 class="my-auto" style="font-size: 1.15rem;">Beard Oil</h6>
+                                    <p class="my-auto">The best thing ever you must try it for real</p>
+                                </div>
+                                <div class="col-2 ms-auto text-end">
+                                    20€
+                                </div>
+                            </div>
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3 d-flex justify-content-center">
+                                    <img src="../assets/template.png" class="rounded-circle">
+                                </div>
+                                <div class="col-7 ps-3">
+                                    <h6 class="my-auto" style="font-size: 1.15rem;">Beard Oil</h6>
+                                    <p class="my-auto">The best thing ever you must try it for real</p>
+                                </div>
+                                <div class="col-2 ms-auto text-end">
+                                    20€
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-start">
+                            <p>You can learn more about the products <span class="fw-bold">on site</span>.</p>
+                        </div>
+                    </div>
+                </div>
+            </products-modal>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-fluid bg-dark text-center align-middle d-flex align-items-center justify-content-center"
+            style="height:30vh;">
+            <div>
+                <div>
+                    <img class="d-block mx-auto my-auto mb-2" src="../assets/johnny-automatic-pineapple-head.svg" alt=""
+                        width="60">
+                </div>
+                <div>
+                    <a class="fw-bold" href="tel:123-456-7890">+123-456-7890</a>
+                    <br>
+                    <a class="fw-bold" href="mailto: info@bluntbarbershop.ee">info@bluntbarbershop.ee</a>
+                    <br>
+                    <a class="fw-bold" href="https://goo.gl/maps/Gv5gU4aLFo2Zhina9" target="_blank">Aleksandri 56,
+                        Tartu</a>
+                    <br>
+                    <a class="fw-bold" href="https://www.instagram.com/" target="_blank"> <img
+                            src="../assets/instagram.svg" width="20" class="mt-2"></a>
+                </div>
+            </div>
+        </div>
+        <div class="position-relative">
+            <div class="position-absolute bottom-0 end-0 text-white-50 pe-2" id="author">by <a
+                    href="https://www.linkedin.com/in/arko-annuk/" target="_blank" style="color:#ffffff80;">Arko</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
