@@ -20,5 +20,3 @@ modal.addEventListener("show.bs.modal", function() {
 modal.addEventListener("hide.bs.modal", function() {
   document.body.classList.remove("modal-open");
 });
-
-

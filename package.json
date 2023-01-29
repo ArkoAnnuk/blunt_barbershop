@@ -6,7 +6,10 @@
     "cleanup": "rimraf .parcel-cache dist",
     "start": "parcel serve src/index.html --public-url / --dist-dir dist",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build --public-url ./ ./src/en.html --dist-dir build"
+    "build": "parcel build --public-url ./ ./src/en.html --dist-dir build",
+    "test:chrome": "npx playwright test --headed --browser=chromium",
+    "test:firefox": "npx playwright test --headed --browser=firefox",
+    "test:safari": "npx playwright test --headed --browser=webkit"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,7 @@
   "homepage": "https://github.com/ArkoAnnuk/blunt_barbershop#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
+    "@playwright/test": "^1.30.0",
     "cssnano": "^4.1.11",
     "parcel": "^2.8.2"
   },
