@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "cleanup": "rimraf .parcel-cache dist",
-    "start": "parcel serve src/index.html --public-url / --dist-dir dist",
+    "start": "parcel serve src/en.html --public-url / --dist-dir dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "parcel build --public-url ./ ./src/en.html --dist-dir build"
   },
