@@ -549,6 +549,16 @@ modal.addEventListener("show.bs.modal", function() {
 modal.addEventListener("hide.bs.modal", function() {
     document.body.classList.remove("modal-open");
 });
+const navLinks = document.querySelectorAll(".nav-item");
+const menuToggle = document.getElementById("navbarNavDropdown");
+const bsCollapse = new _bootstrap.Collapse(menuToggle, {
+    toggle: false
+});
+navLinks.forEach((l)=>{
+    l.addEventListener("click", ()=>{
+        bsCollapse.toggle();
+    });
+});
 
 },{"bootstrap":"h36JB","gsap":"fPSuC","gsap/ScrollTrigger":"7wnFk"}],"h36JB":[function(require,module,exports) {
 /*!
