@@ -84,3 +84,11 @@ body {
   overflow-y:scroll;
 }
 
+// Footer bg-image positioning
+
+@media (min-width: 900px) {
+  .bg-image-props {
+    background-size: cover;
+    background-position: center;
+  }
+}
