@@ -12367,4 +12367,4 @@ _getGSAP() && gsap.registerPlugin(Observer);
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["jQVXF","1SICI"], "1SICI", "parcelRequire5dae")
 
-//# sourceMappingURL=index.18dbc454.js.map
+//# sourceMappingURL=en.18dbc454.js.map

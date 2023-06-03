@@ -21,4 +21,9 @@ modal.addEventListener("hide.bs.modal", function() {
   document.body.classList.remove("modal-open");
 });
 
-
+const navLinks = document.querySelectorAll('.nav-item')
+const menuToggle = document.getElementById('navbarNavDropdown')
+const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false})
+navLinks.forEach((l) => {
+    l.addEventListener('click', () => { bsCollapse.toggle() })
+})
