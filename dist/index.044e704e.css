@@ -12029,11 +12029,6 @@ textarea.form-control-lg {
   line-height: 50px;
 }
 
-.container-fluid video, .container-sm video, .container-md video, .container-lg video, .container-xl video, .container-xxl video {
-  object-fit: cover;
-  height: 100vh;
-}
-
 @media (max-width: 991px) {
   .navbar-nav {
     margin-left: 0;
