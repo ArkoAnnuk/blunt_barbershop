@@ -1,4 +1,5 @@
 # Landing Page (Blunt Barbershop)
+https://bluntbarbershop.ee/
 ## Introduction
 This is a simple landing page for Blunt Barbershop, showcasing its services and ambiance, with a call-to-action for appointment scheduling. It's designed to align with the brand's aesthetics.
 
